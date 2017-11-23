@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Rulotes Bar</title>
+<!--
+
+Template 2080 Minimax
+
+http://www.tooplate.com/view/2080-minimax
+
+-->
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/nivo-lightbox.css">
+	<link rel="stylesheet" href="static/css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- google web font css -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+	
+<!-- navigation -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#home" class="navbar-brand smoothScroll">RulotesBar</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#service" class="smoothScroll">SERVIÇO</a></li>
+				<li><a href="#portfolio" class="smoothScroll">RULOTES</a></li>
+				<li><a href="#portfolio2" class="smoothScroll">CARRINHAS</a></li>
+				<li><a href="#pricing" class="smoothScroll">PREÇOS</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACTO</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+
+<!-- home section -->
+<div id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-6">
+				<h2>Bem-vindo à</h2>
+				<h1>Rulotes <strong>Bar</strong></h1>
+				<p>Rulotes Bar/Cozinha, Auto-bares, Carrinhas de Street Food.</p>
+				<a href="#service" class="btn btn-default smoothScroll">GET STARTED</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- service section -->
+<div id="service">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h2>O nosso serviço</h2>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<!--<i class="fa fa-cubes"></i>-->
+				<h3>Aluguer</h3>
+				<p>Aluguer para Showcooking, Street Food, eventos, festas, festivais, apoio a empresas de Catering,
+					festas particulares, concertos, provas desportivas, publicidade, promoção de marcas, etc.</p>
+				<p>Fornecemos colocação e retoma no local do evento.</p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<!--<i class="fa fa-cogs"></i>-->
+				<h3>Qualidade</h3>
+				<p>Todas as rulotes possuem <a href="http://www.segurancalimentar.com/conteudos.php?id=20">HACCP</a> assim como
+					<a href="http://negociosglobais.com/cfiles/acisat/downloads/h/Manualdeapoio_restauracao_bebida.pdf">Atestado Higio-Sanitário</a> em dia para a prática de restauração.
+					São entregues limpas e vazias de produtos (de comidas, bebidas, limpeza, etc), assim como de consumíveis.</p>
+				<p>	Durante o aluguer, é da responsabilidade de quem aluga: o estado de higiene; a qualidade dos produtos em venda;
+                    quaisquer danos na rulote durante o evento.</p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<!--<i class="fa fa-group"></i>-->
+				<h3>Personalização</h3>
+				<p>O aluguer não inclui fornecimento de equipamentos de apoio: mesas, cadeiras, caixotes do lixo,
+					extensões eléctricas, produtos de limpeza e higiene, gás, gás para a máquina de imperial, etc.</p>
+				<p>É possível a caracterização a gosto do cliente, desde que os materiais utilizados sejam de fácil remoção,
+					devendo as rulotes ser devolvidas sem vestígios da personalização.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- divider section -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-10 col-sm-10">
+			<hr>
+		</div>
+		<div class="col-md-1 col-sm-1"></div>
+	</div>
+</div>
+
+<!-- rulotes section -->
+<div id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="title">
+					<h2>Rulotes</h2>
+				</div>
+				<!-- ISO section -->
+				<div class="iso-section">
+					<ul class="filter-wrapper clearfix">
+						<li><a id="pfmain" href="#" class="opc-main-bg" data-filter=".main">Todas</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs2">CS2</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs4">CS4</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs5">CS5</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs6">CS6</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs7">CS7</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs8">CS8</a></li>
+					</ul>
+					<div class="iso-box-section">
+						<div class="iso-box-wrapper col4-iso-box">
+
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS2 - 4.50 x 2.20</h2>
+								<p>Rulote Bar Preta. Acresce 1.35m em comprimento a lança de reboque.
+                                    Altura total contando com chaminé: 2.89m.</p>
+								<p>Equipamento standard: frigorífico vertical de duas portas (1.80m altura), parte superior
+                                    frio positivo, parte inferior congelador; exaustor; água quente e
+									fria; botelheiro refrigerador de latas e garrafas; 2 depósitos de águas limpas e residuais.</p>
+								<p>Zona de cozinha na parte frontal. Espaço para uma máquina de imperial até 0.45m largura,
+                                    0.54m profundidade, e 0.76m de altura. Torre de imperial a fixar no tampo do balcão.</p>
+							</div>
+							<div class="iso-box main cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173544.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173544.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185250.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185250.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185310.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185310.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185331.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185331.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185344.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185344.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185402.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185402.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185429.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185429.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185440.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185440.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160427_185450.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160427_185450.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173455.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173455.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173623.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173623.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173648.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173648.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173652.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173652.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173700.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173700.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173710.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173710.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173722.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173722.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173821.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173821.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173838.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173838.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173859.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173859.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs2 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs2/20160628_173908.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs2/20160628_173908.jpg" alt="portfolio img"></a>
+							</div>
+
+							<div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS4 - 6.00 x 2.20</h2>
+								<p>Marca Toniauto. Rulote ideal para
+                                    grandes eventos pela sua dimensão e altura dos balcões perante grande afluência de
+                                    clientes.</p>
+                                <p>Equipamento standard: arca refrigeradora de garrafas de
+									4 compartimentos com tampas deslizantes na superfície; arca congeladora vertical
+                                    de 105 litros <i>No Frost</i>; frigorífico de 105 litros; exaustor de 90 ou 180 (conforme
+									necessidade); ligação a gás para botija no exterior (na traseira da
+									rulote); águas quentes e frias; 2 depósitos de águas limpas e residuais
+									(com possibilidade de esgoto através de mangueira exterior).</p>
+                                <p>Possui: bancadas de trabalho
+									de grandes dimensões (0.70m de profundidade); balcão exterior em inox com
+									possibilidade de montar (conforme necessidade); tampo para o
+									fogão regulável em altura; chão em alumínio anti-derrapante; entrada de corrente
+                                    com possibilidade de trifásico ou monofásico; prateleiras amovíveis com
+                                    altura variável (conforme necessidade). </p>
+                                <p></p>
+							</div>
+							<div class="iso-box main cs4 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs4/28052012032.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs4/28052012032.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs4/28052012033.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs4/28052012033.jpg" alt="portfolio img"></a>
+							</div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012067.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012067.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012066.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012066.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012064.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012064.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012063.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012063.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012062.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012062.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012061.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012061.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012060.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012060.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/27062012059.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/27062012059.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/12072011107.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/12072011107.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/12072011105.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/12072011105.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/12072011103.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/12072011103.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/12072011102.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/12072011102.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs4 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs4/10062012868.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs4/10062012868.jpg" alt="portfolio img"></a>
+                            </div>
+
+							<div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS5 - 5.50 x 2.20</h2>
+                                <p>Marca PYC.</p>
+                                <p>Equipamento standard: 2 arcas refrigeradoras de garrafas
+									com tampas deslizantes na parte superior; refrigeradora vertical (1.80m altura);
+                                    arca congeladora vertical de 105 litros.</p>
+                                <p>Possui: exaustor; 2 depósitos de águas limpas e residuais; bomba de água;
+                                    chão anti-derrapante.</p>
+							</div>
+							<div class="iso-box main cs5 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs5/03092013391.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs5/03092013391.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs5/03092013383.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs5/03092013383.jpg" alt="portfolio img"></a>
+							</div>
+                            <div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs5/03092013384.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs5/03092013384.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs5/03092013385.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs5/03092013385.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs5/03092013386.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs5/03092013386.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs5/03092013387.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs5/03092013387.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs5/03092013388.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs5/03092013388.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs5/03092013389.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs5/03092013389.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs5 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs5/03092013390.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs5/03092013390.jpg" alt="portfolio img"></a>
+                            </div>
+
+							<div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS6 - 3.50 x 2.10</h2>
+								<p>Marca Toniauto. Abre para 3
+                                    lados (traseira e laterais), balcão com total de 6 metros.</p>
+                                <p>Equipamento standard: arca refrigeradora, frigorífico e arca congeladora.</p>
+                                <p>Possui: cozinha separada, água quente e fria; 2 depósitos de águas limpas e residuais. </p>
+
+                            </div>
+							<div class="iso-box main cs6 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs6/20160229_145711.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs6/20160229_145711.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs6/20160229_145732.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs6/20160229_145732.jpg" alt="portfolio img"></a>
+							</div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11022014433.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11022014433.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11022014437.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11022014437.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11022014438.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11022014438.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11022014440.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11022014440.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11022014442.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11022014442.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11022014445.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11022014445.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014484.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014484.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014485.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014485.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014486.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014486.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014487.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014487.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014488.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014488.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014489.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014489.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014490.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014490.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/11052014491.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/11052014491.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/17072014507.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/17072014507.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/24072014520.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/24072014520.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/120320145341.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/120320145341.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/120320145348.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/120320145348.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/120320145350.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/120320145350.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/120320145351.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/120320145351.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs6/Esquema rulote CS6.png" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs6/Esquema rulote CS6.png" alt="portfolio img"></a>
+                            </div>
+
+							<div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS7 - 3.50 x 2.20</h2>
+								<p>Equipamento standard: frigorífico; arca congeladora; arca refrigeradora
+                                    (botelheiro com tampas deslizantes na parte superior); termoacumulador.</p>
+                                <p>Possui: 2 depósitos de águas limpas e residuais; exaustor; chão em alumínio anti-derrapante.</p>
+							</div>
+							<div class="iso-box main cs7 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs7/20170510_183923.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs7/20170510_183923.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs7/20170510_183907.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs7/20170510_183907.jpg" alt="portfolio img"></a>
+							</div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_183946.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_183946.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184007.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184007.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184020.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184020.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184040.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184040.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184108.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184108.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184159.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184159.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184224.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184224.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184250.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184250.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs7 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs7/20170510_184320.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs7/20170510_184320.jpg" alt="portfolio img"></a>
+                            </div>
+
+							<div class="iso-box cs8 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS8 - 4.00x2.20</h2>
+								<p>Equipamento Standard: frigorífico; arca refrigeradora (botelheiro); arca congeladora;
+                                    exaustor.</p>
+                                <p>Possui: 2 depósitos de águas limpas e residuais (100l); bomba de água; iluminação <i>Led</i>;
+                                    chão em alumínio anti-derrapante.</p>
+							</div>
+							<div class="iso-box main cs8 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs8/atr.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs8/atr.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso-box cs8 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs8/20160605_194837.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs8/20160605_194837.jpg" alt="portfolio img"></a>
+							</div>
+                            <div class="iso-box cs8 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs8/20160605_194930.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs8/20160605_194930.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs8 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs8/20160605_194947.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs8/20160605_194947.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs8 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs8/20160605_195028.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs8/20160605_195028.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs8 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs8/20160605_195041.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs8/20160605_195041.jpg" alt="portfolio img"></a>
+                            </div>
+                            <div class="iso-box cs8 col-md-6 col-sm-6 col-xs-12">
+                                <a href="static/images/cs8/20160605_195100.jpg" data-lightbox-gallery="portfolio-gallery">
+                                    <img src="static/images/cs8/20160605_195100.jpg" alt="portfolio img"></a>
+                            </div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- divider section -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-10 col-sm-10">
+			<hr>
+		</div>
+		<div class="col-md-1 col-sm-1"></div>
+	</div>
+</div>
+
+<!-- portfolio section -->
+<div id="portfolio2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="title">
+					<h2>Carrinhas</h2>
+				</div>
+				<!-- ISO section -->
+				<div class="iso-section">
+					<ul class="filter2-wrapper clearfix">
+						<li><a id="pf2main" href="#" class="opc-main-bg" data-filter=".main">Todas</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs1">CS1</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".cs3">CS3</a></li>
+					</ul>
+					<div class="iso-box-section">
+						<div class="iso2-box-wrapper col4-iso-box">
+
+							<div class="iso2-box cs1 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS1 - Renault Master</h2>
+								<p>Ideal para Street Food, Road Shows, Divulgação de
+                                    marcas e produtos, etc. Colocação no local quando em local fixo, ou com condutor.</p>
+
+                                <p>Equipamento standard: arca congeladora; frigorifico; refrigeradora de garrafas;
+                                    água quente e fria; 2 depósitos de águas limpas e residuais; exaustor.</p>
+
+                                <p>Possui: chão em alumínio anti-derrapante.</p>
+							</div>
+							<div class="iso2-box main cs1 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs1/23062015665.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs1/23062015665.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs1 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs1/09062015656.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs1/09062015656.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs1 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs1/09062015657.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs1/09062015657.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs1 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs1/23062015663.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs1/23062015663.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs1 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs1/23062015664.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs1/23062015664.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs1 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs1/23062015666.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs1/23062015666.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs1 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs1/23062015667.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs1/23062015667.jpg" alt="portfolio img"></a>
+							</div>
+
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<h2>CS3 - Iveco 35C18</h2>
+                                <p>Ideal para promoção e divulgação de produtos e marcas.</p>
+								<p>Equipamento standard: refrigeradora de latas e garrafas (botelheiro); frigorífico;
+                                    arca congeladora; exaustor; água quente e fria; 2 depósitos de águas limpas e
+                                    residuais (100l).</p>
+                                <p>Possui: caixa de trabalho (4.50m de comprimento).</p>
+							</div>
+							<div class="iso2-box main cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_204832.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_204832.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20151007_192915.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20151007_192915.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160304_115729.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160304_115729.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160304_115753.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160304_115753.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_204817.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_204817.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_204841.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_204841.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_204850.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_204850.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_204901.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_204901.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_204915.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_204915.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_204926.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_204926.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_205007.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_205007.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_205024.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_205024.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_205045.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_205045.jpg" alt="portfolio img"></a>
+							</div>
+							<div class="iso2-box cs3 col-md-6 col-sm-6 col-xs-12">
+								<a href="static/images/cs3/20160531_205059.jpg" data-lightbox-gallery="portfolio-gallery">
+									<img src="static/images/cs3/20160531_205059.jpg" alt="portfolio img"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+
+<!-- divider section -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-10 col-sm-10">
+			<hr>
+		</div>
+		<div class="col-md-1 col-sm-1"></div>
+	</div>
+</div>
+
+<!-- pricing section -->
+<div id="pricing">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h2>Preços</h2>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-10">
+				<div class="plan">
+					<div class="plan-title">
+						<h3>Simples</h3>
+						<small>Cobrado por Dia</small>
+					</div>
+					<ul>
+						<li>Alugueres até 7 dias</li>
+						<li>Nenhum transporte</li>
+						<li>Nenhum equipamento extra</li>
+					</ul>
+					<!--<button class="btn btn-warning">Sign Up</button>-->
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-10">
+				<div class="plan">
+					<div class="plan-title">
+						<h3>Regular</h3>
+						<small>Cobrado por Dia e Distância</small>
+					</div>
+					<ul>
+						<li>Alugueres até 7 dias</li>
+						<li>Transporte e recolha no local</li>
+						<li>Nenhum equipamento extra</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-10">
+				<div class="plan">
+					<div class="plan-title">
+						<h3>Completo</h3>
+						<small>Cobrado por Dia e Distância</small>
+					</div>
+					<ul>
+						<li>Alugueres até 7 dias</li>
+						<li>Transporte e recolha no local</li>
+						<li>Equipamento extra</li>
+						<li>Apoio no local</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-10">
+				<div class="plan">
+					<div class="plan-title">
+						<h3>Longo</h3>
+						<small>Caso a Caso</small>
+					</div>
+					<ul>
+						<li>Alugueres para mais de 7 dias</li>
+						<li>Transporte e recolha no local</li>
+						<li>Equipamento extra</li>
+						<li>Apoio no local</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- divider section -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-10 col-sm-10">
+			<hr>
+		</div>
+		<div class="col-md-1 col-sm-1"></div>
+	</div>
+</div>
+
+<!-- contact section -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h2>Contacte-nos</h2>
+			</div>
+			<form action="email" method="post" role="form">
+				<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-10 col-sm-10">
+					<div class="col-md-6 col-sm-6">
+						<input name="name" type="text" class="form-control" id="name" placeholder="Nome">
+				  	</div>
+					<div class="col-md-6 col-sm-6">
+						<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+				  	</div>
+                    <div class="col-md-12 col-sm-12">
+						<input name="subject" type="text" class="form-control" id="subject" placeholder="Modelo (CS1, CS2, etc)">
+	    	  	  	</div>
+					<div class="col-md-12 col-sm-12">
+						<textarea name="message" rows="5" class="form-control" id="message"
+								  placeholder="Inclua no seu e-mail as seguintes informações:
+ - Localidade do evento
+ - Data de colocação e retoma
+ - Equipamentos adicionais necessários"></textarea>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<p>Contacte-nos para dúvidas e orçamentos personalizados.</p>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<input name="submit" type="submit" class="form-control" id="submit" value="Enviar">
+
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-1"></div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- divider section -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-10 col-sm-10">
+			<hr>
+		</div>
+		<div class="col-md-1 col-sm-1"></div>
+	</div>
+</div>
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<h2>Onde Estamos</h2>
+				<p>Fazendas de Almeirim, Santarém, Portugal</p>
+				<p>Email: <span>cmbsib@hotmail.com</span></p>
+				<p>Phone: <span>+351 960 222 733</span></p>
+			</div>
+			<!--<div class="col-md-6 col-sm-6">
+				<h2>Redes Sociais</h2>
+				<ul class="social-icons">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+					<li><a href="#" class="fa fa-dribbble"></a></li>
+				</ul>
+			</div>-->
+		</div>
+	</div>
+</footer>
+
+<!-- divider section -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-10 col-sm-10">
+			<hr>
+		</div>
+		<div class="col-md-1 col-sm-1"></div>
+	</div>
+</div>
+
+
+<!-- scrolltop section -->
+<a href="#top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- javascript js -->	
+<script src="static/js/jquery.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/nivo-lightbox.min.js"></script>
+<script src="static/js/smoothscroll.js"></script>
+<script src="static/js/jquery.nav.js"></script>
+<script src="static/js/isotope.js"></script>
+<script src="static/js/imagesloaded.min.js"></script>
+<script src="static/js/custom.js"></script>
+
+</body>
+</html>
