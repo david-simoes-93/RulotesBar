@@ -7,31 +7,29 @@ app = Flask(__name__)
 
 @app.route('/email', methods=['POST'])
 def send_email():
-    print("lol",request.form["email"],
-    request.form["name"],
-    request.form["message"],
-    request.form["subject"])
-
-
+    destination = 'david.simoes@ua.pt'
+    #print("lol",request.form["email"],
+    #request.form["name"],
+    #request.form["message"],
+    #request.form["subject"])
 
     sender = request.form["email"]
-    receivers = ['david.simoes@ua.pt']
+    receivers = [destination]
 
-    message = """From: From "+request.form["name"]+" <"+request.form["email"]+">
-    To: To RulotesBar <david.simoes@ua.pt>
-    Subject: SMTP e-mail test
-
-    This is a test e-mail message.
-    """
+    message = "From: From "+request.form["name"]+" <"+request.form["email"]+">\nTo: To RulotesBar <"+destination+\
+        ">\nSubject: SMTP e-mail test\nThis is a test e-mail message."
+    print(message)
 
     try:
-       smtpObj = smtplib.SMTP(localhost)
+       smtpObj = smtplib.SMTP('localhost')
        smtpObj.sendmail(sender, receivers, message)
        print("Successfully sent email")
+       return render_template('email.html')
     except smtplib.SMTPException:
        print("Error: unable to send email")
 
-    return redirect(url_for('index')+"#contact")
+    return render_template('email_error.html')
+
 
 @app.route('/')
 def index():

@@ -113,7 +113,7 @@ img:hover {
 
 /* home section */
 #home {
-  background: url('../images/home-bg.jpg')no-repeat;
+  background: url('../images/logo.png')no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -172,50 +172,6 @@ img:hover {
   margin-top: 50px;
   margin-bottom: 15px;
   padding: 40px;
-}
-
-/* about section */
-#about {
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-#about h2 {
-  border-right: 2px solid #f2af00;
-  display: inline-block;
-  padding: 10px 20px 10px 10px;
-}
-#about .col-md-12 {
-  text-align: center;
-  padding-bottom: 60px;
-}
-#about img {
-  border: 1px solid #666;
-  padding: 10px;
-}
-#about h4 {
-  padding-bottom: 10px;
-}
-
-/* team section */
-#team {
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-#team h2 {
-  border-left: 2px solid #f2af00;
-  display: inline-block;
-  padding: 10px 10px 10px 20px;
-}
-#team h4 {
-	padding-bottom: 40px;
-}
-#team .col-md-12 {
-  text-align: center;
-  padding-bottom: 60px;
-}
-#team img {
-  border: 1px solid #666;
-  padding: 15px;
 }
 
 /* portfolio section */
@@ -320,6 +276,7 @@ img:hover {
 .iso-box {
     position: relative;
     min-height: 50px;
+    max-height: 300px;
     float: left;
     overflow: hidden;
     margin-bottom: 20px;
@@ -336,9 +293,13 @@ img:hover {
     height: 100%;
     overflow: hidden;
 }
+.scroller {
+    overflow-y: scroll;
+}
 .iso2-box {
     position: relative;
     min-height: 50px;
+    max-height: 300px;
     float: left;
     overflow: hidden;
     margin-bottom: 20px;
