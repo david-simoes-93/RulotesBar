@@ -12,8 +12,6 @@ jQuery(document).ready(function($){
 	    var $container 	= $('.iso-box-wrapper'), 
 	    	$imgs 		= $('.iso-box img');
 
-
-
 	    $container.imagesLoaded(function () {
 
 	    	$container.isotope({
