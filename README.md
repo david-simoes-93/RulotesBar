@@ -9,7 +9,10 @@ Run with Flask and Python3
 Make it work on reboot:
 
     sudo nano /etc/rc.local
-        cd /home/pi/RulotesBar/; run.sh &
+        export LANG=en_GB.UTF-8
+        export LC_ALL=en_GB.UTF-8
+        export LC_CTYPE=en_GB.UTF-8
+        sudo -u pi -H sh -c "cd /home/pi/RulotesBar; ./run.sh &"
     
 Install SMTP server (from [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-14-04) and [here](https://www.linode.com/docs/email/postfix/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu)):
 
