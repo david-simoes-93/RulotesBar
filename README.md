@@ -13,6 +13,7 @@ Make it work on reboot:
         export LC_ALL=en_GB.UTF-8
         export LC_CTYPE=en_GB.UTF-8
         sudo -u pi -H sh -c "cd /home/pi/RulotesBar; ./run.sh &"
+        sudo /usr/local/bin/noip2
     
 Install SMTP server (from [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-14-04) and [here](https://www.linode.com/docs/email/postfix/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu)):
 
@@ -37,3 +38,10 @@ Install SMTP server (from [here](https://www.digitalocean.com/community/tutorial
         smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
     sudo service restart postfix
     
+    Install Dynamic DNS from [NoIP](https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/) or set it up directly in your router
+
+    cd /usr/local/src/
+    sudo wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
+    sudo tar xf noip-duc-linux.tar.gz
+    cd noip-2.1.9-1/
+    sudo make install
