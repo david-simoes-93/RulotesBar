@@ -19,10 +19,10 @@ def send_email():
 	sender = request.form["email"]
 	receivers = [destination]
 
-	message = "CC: "+Header(request.form["name"], "utf-8")+" <"+Header(request.form["email"], "utf-8")+\
+	message = "CC: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 		">\nTo: RulotesBar <"+destination+\
-	    ">\nSubject: "+Header(request.form["subject"], "utf-8")+"\n"+\
-	    MIMEText(request.form["message"], _charset="UTF-8")
+	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\n"+\
+	    MIMEText(request.form["message"], _charset="UTF-8").as_string()
 	print(message)
 
 	try:
@@ -47,10 +47,10 @@ def send_email_en():
 	sender = request.form["email"]
 	receivers = [destination]
 
-	message = "CC: "+Header(request.form["name"], "utf-8")+" <"+Header(request.form["email"], "utf-8")+\
+	message = "CC: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 		">\nTo: RulotesBar <"+destination+\
-	    ">\nSubject: "+Header(request.form["subject"], "utf-8")+"\n"+\
-	    MIMEText(request.form["message"], _charset="UTF-8")
+	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\n"+\
+	    MIMEText(request.form["message"], _charset="UTF-8").as_string()
 	print(message)
 
 	try:
