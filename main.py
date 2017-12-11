@@ -2,6 +2,8 @@
 
 from flask import Flask, jsonify, render_template, request, redirect, url_for
 import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
 
 app = Flask(__name__)
 
@@ -17,8 +19,10 @@ def send_email():
 	sender = request.form["email"]
 	receivers = [destination]
 
-	message = "CC: "+request.form["name"]+" <"+request.form["email"]+">\nTo: RulotesBar <"+destination+\
-	    ">\nSubject: "+request.form["subject"]+"\n"+request.form["message"]
+	message = "CC: "+Header(request.form["name"], "utf-8")+" <"+Header(request.form["email"], "utf-8")+\
+		">\nTo: RulotesBar <"+destination+\
+	    ">\nSubject: "+Header(request.form["subject"], "utf-8")+"\n"+\
+	    MIMEText(request.form["message"], _charset="UTF-8")
 	print(message)
 
 	try:
@@ -43,8 +47,10 @@ def send_email_en():
 	sender = request.form["email"]
 	receivers = [destination]
 
-	message = "CC: "+request.form["name"]+" <"+request.form["email"]+">\nTo: RulotesBar <"+destination+\
-	    ">\nSubject: "+request.form["subject"]+"\n"+request.form["message"]
+	message = "CC: "+Header(request.form["name"], "utf-8")+" <"+Header(request.form["email"], "utf-8")+\
+		">\nTo: RulotesBar <"+destination+\
+	    ">\nSubject: "+Header(request.form["subject"], "utf-8")+"\n"+\
+	    MIMEText(request.form["message"], _charset="UTF-8")
 	print(message)
 
 	try:
