@@ -18,7 +18,7 @@ Make it work on reboot:
 Install SMTP server (from [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-14-04) and [here](https://www.linode.com/docs/email/postfix/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu)):
 
     sudo apt-get install mailutils libsasl2-modules postfix
-    nano /etc/postfix/sasl/sasl_passwd
+    sudo nano /etc/postfix/sasl/sasl_passwd
         [smtp.gmail.com]:587 rulotesbar@gmail.com:mypassword
     sudo postmap /etc/postfix/sasl/sasl_passwd
     sudo chown root:root /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
@@ -36,7 +36,7 @@ Install SMTP server (from [here](https://www.digitalocean.com/community/tutorial
         smtp_tls_security_level = encrypt
         # Location of CA certificates
         smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
-    sudo service restart postfix
+    sudo service postfix restart
     
     Install Dynamic DNS from [NoIP](https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/) or set it up directly in your router
 
