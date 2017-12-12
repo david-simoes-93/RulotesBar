@@ -15,8 +15,9 @@ def send_email():
 	receivers = [destination]
 
 	message2 = "To: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
-	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\nThis is an automated message.\n\n"+\
-	    MIMEText("Este é um e-mail automático.\n\nRecebemos a sua mensagem e vamos contactá-lo o mais rápido possível.\n\n"+\
+	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\n"+MIMEText(
+	    "Esta é uma mensagem automática.\n\n"+\
+	    "Recebemos a sua mensagem e vamos contactá-lo o mais rápido possível.\n\n"+\
 	    "Obrigado pela sua atenção,\nRulotesBar", _charset="UTF-8").as_string()
 
 	message = "CC: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
