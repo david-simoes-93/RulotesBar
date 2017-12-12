@@ -45,3 +45,21 @@ Install SMTP server (from [here](https://www.digitalocean.com/community/tutorial
     sudo tar xf noip-duc-linux.tar.gz
     cd noip-2.1.9-1/
     sudo make install
+    
+Install a [DNS Server](http://www.thegeekstuff.com/2014/01/install-dns-server/)
+
+    sudo apt install bind9
+    sudo nano /etc/bind/named.conf.options
+        forwarders {
+            8.8.8.8;
+            8.8.4.4;
+        };
+    sudo service bind9 restart
+    sudo nano /etc/bind/named.conf.local
+        zone "rulotesbar.pt" {
+            type master;
+            file "/etc/bind/db.rulotesbar.pt";
+        };
+    sudo cp /etc/bind/db.local /etc/bind/db.rulotesbar.pt
+    sudo nano /etc/bind/db.rulotesbar.pt
+    
