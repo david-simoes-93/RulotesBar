@@ -1,6 +1,6 @@
 # RulotesBar
 
-Simple website for a food truck rental business. Check it out [here](http://94.60.3.235/).
+Simple website for a food truck rental business. Check it out [here](www.rulotesbar.pt).
 
 Run with Flask and Python3
 
@@ -38,10 +38,3 @@ Install SMTP server (from [here](https://www.digitalocean.com/community/tutorial
         smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
     sudo service postfix restart
     
-    Install Dynamic DNS from [NoIP](https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/) or set it up directly in your router
-
-    cd /usr/local/src/
-    sudo wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
-    sudo tar xf noip-duc-linux.tar.gz
-    cd noip-2.1.9-1/
-    sudo make install
