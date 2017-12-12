@@ -9,12 +9,7 @@ app = Flask(__name__)
 
 @app.route('/email', methods=['POST'])
 def send_email():
-    # https://stackoverflow.com/questions/8329741/issue-with-smtplib-sending-mail-with-unicode-characters-in-python-3-1
-	destination = 'gamecloner@gmail.com'
-	#print("lol",request.form["email"],
-	#request.form["name"],
-	#request.form["message"],
-	#request.form["subject"])
+    destination = 'gamecloner@gmail.com'
 
 	sender = request.form["email"]
 	receivers = [destination]
@@ -39,10 +34,6 @@ def send_email():
 @app.route('/email_en', methods=['POST'])
 def send_email_en():
 	destination = 'gamecloner@gmail.com'
-	#print("lol",request.form["email"],
-	#request.form["name"],
-	#request.form["message"],
-	#request.form["subject"])
 
 	sender = request.form["email"]
 	receivers = [destination]
@@ -75,6 +66,6 @@ def index_en():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1',port=5000)
-    #app.run(host='192.168.1.64',port=5000) # uncomment this on Pi
+    #app.run(host='127.0.0.1',port=5000)    # uncomment this for local debugging
+    app.run(host='192.168.1.64',port=5000)
 
