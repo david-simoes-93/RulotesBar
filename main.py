@@ -16,8 +16,8 @@ def send_email():
 
 	message2 = "To: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\nThis is an automated message.\n\n"+\
-	    "We have received your e-mail and will contact you as soon as possible.\n\n"+\
-	    "Thank you for your attention,\nRulotesBar"
+	    MIMEText("Este é um e-mail automático.\n\nRecebemos a sua mensagem e vamos contactá-lo o mais rápido possível.\n\n"+\
+	    "Obrigado pela sua atenção,\nRulotesBar", _charset="UTF-8").as_string()
 
 	message = "CC: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 		">\nTo: RulotesBar <"+destination+\
@@ -46,8 +46,8 @@ def send_email_en():
 
 	message2 = "To: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\nThis is an automated message.\n\n"+\
-	    MIMEText("Este é um e-mail automático.\n\nRecebemos a sua mensagem e vamos contactá-lo o mais rápido possível.\n\n"+\
-	    "Obrigado pela sua atenção,\nRulotesBar", _charset="UTF-8").as_string()
+	    "We have received your e-mail and will contact you as soon as possible.\n\n"+\
+	    "Thank you for your attention,\nRulotesBar"
 
 	message = "CC: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 		">\nTo: RulotesBar <"+destination+\
