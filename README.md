@@ -1,6 +1,6 @@
 # RulotesBar
 
-Simple website for a food truck rental business. Check it out [here](www.rulotesbar.pt).
+Simple website for a food truck rental business. Check it out [here](http://www.rulotesbar.pt).
 
 Run with Flask and Python3
 
