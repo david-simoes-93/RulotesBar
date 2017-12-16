@@ -117,6 +117,40 @@ jQuery(document).ready(function($){
     document.getElementById('pf2main').click();
 });
 
+jQuery(document).ready(function($){
+    $("#cs1pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+
+    $("#cs2pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+
+    $("#cs3pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+
+    $("#cs4pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+
+    $("#cs5pano").pano({
+        img: "static/images/cs7pano.jpg"
+    });
+
+    $("#cs6pano").pano({
+        img: "static/images/cs7pano.jpg"
+    });
+
+    $("#cs7pano").pano({
+        img: "static/images/cs7pano.jpg"
+    });
+
+    $("#cs8pano").pano({
+        img: "static/images/cs7pano.jpg"
+    });
+});
+
 
 // HIDE MOBILE MENU AFTER CLIKING ON A LINK
    $('.navbar-collapse a').click(function(){
