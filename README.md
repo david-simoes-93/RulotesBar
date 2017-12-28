@@ -13,7 +13,6 @@ Make it work on reboot:
         export LC_ALL=en_GB.UTF-8
         export LC_CTYPE=en_GB.UTF-8
         sudo -u pi -H sh -c "cd /home/pi/RulotesBar; ./run.sh &"
-        sudo /usr/local/bin/noip2
     
 Install SMTP server (from [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-14-04) and [here](https://www.linode.com/docs/email/postfix/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu)):
 
@@ -37,4 +36,14 @@ Install SMTP server (from [here](https://www.digitalocean.com/community/tutorial
         # Location of CA certificates
         smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
     sudo service postfix restart
+    
+Install Gunicorn (somehow):
+
+    sudo pip3 install gunicorn
+    
+    pip3 install --upgrade pip setuptools
+    python3 -m venv rbar
+    source ~/venvs/rbar/bin/activate
+    pip install flask gunicorn
+  
     
