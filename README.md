@@ -2,8 +2,9 @@
 
 Simple website for a food truck rental business. Check it out [here](http://www.rulotesbar.pt).
 
-Run with Flask and Python3
+Run with Flask, Gunicorn, and Python3
 
+    sudo pip3 install gunicorn flask
     python3 main.py > web.log 2>&1
     
 Make it work on reboot:
@@ -36,14 +37,3 @@ Install SMTP server (from [here](https://www.digitalocean.com/community/tutorial
         # Location of CA certificates
         smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
     sudo service postfix restart
-    
-Install Gunicorn (somehow):
-
-    sudo pip3 install gunicorn
-    
-    pip3 install --upgrade pip setuptools
-    python3 -m venv rbar
-    source ~/venvs/rbar/bin/activate
-    pip install flask gunicorn
-  
-    
