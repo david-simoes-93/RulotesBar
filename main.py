@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/email', methods=['POST'])
 def send_email():
-	myemail = 'gamecloner@gmail.com'
+	myemail = 'cmbsib@hotmail.com'
 	client = request.form["email"]
 	#receivers = [myemail]
 
@@ -39,7 +39,7 @@ def send_email():
 
 @app.route('/email_en', methods=['POST'])
 def send_email_en():
-	myemail = 'gamecloner@gmail.com'
+	myemail = 'cmbsib@hotmail.com'
 	client = request.form["email"]
 	#receivers = [myemail]
 
