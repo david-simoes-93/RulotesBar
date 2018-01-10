@@ -118,35 +118,37 @@ jQuery(document).ready(function($){
 });
 
 jQuery(document).ready(function($){
-    $("#cs1pano").pano({
+    $("#c1pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+    $("#c2pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+    $("#c3pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+    $("#c4pano").pano({
+        img: "static/images/cs4pano.jpg"
+    });
+    $("#c5pano").pano({
         img: "static/images/cs4pano.jpg"
     });
 
-    $("#cs2pano").pano({
+
+    $("#r1pano").pano({
         img: "static/images/cs4pano.jpg"
     });
-
-    $("#cs3pano").pano({
+    $("#r2pano").pano({
         img: "static/images/cs4pano.jpg"
     });
-
-    $("#cs4pano").pano({
-        img: "static/images/cs4pano.jpg"
+    $("#r3pano").pano({
+        img: "static/images/cs7pano.jpg"
     });
-
-    $("#cs5pano").pano({
+    $("#r4pano").pano({
         img: "static/images/cs7pano.jpg"
     });
 
-    $("#cs6pano").pano({
-        img: "static/images/cs7pano.jpg"
-    });
-
-    $("#cs7pano").pano({
-        img: "static/images/cs7pano.jpg"
-    });
-
-    $("#cs8pano").pano({
+    $("#r5pano").pano({
         img: "static/images/cs7pano.jpg"
     });
 });
