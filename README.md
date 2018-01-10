@@ -5,7 +5,7 @@ Simple website for a food truck rental business. Check it out [here](http://www.
 Run with Flask, Gunicorn, and Python3
 
     sudo pip3 install gunicorn flask
-    python3 main.py > web.log 2>&1
+    gunicorn --bind 0.0.0.0:5000 wsgi:app > web.log 2>&1
     
 Make it work on reboot:
 
