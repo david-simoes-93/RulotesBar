@@ -117,41 +117,6 @@ jQuery(document).ready(function($){
     document.getElementById('pf2main').click();
 });
 
-jQuery(document).ready(function($){
-    $("#c1pano").pano({
-        img: "static/images/cs4pano.jpg"
-    });
-    $("#c2pano").pano({
-        img: "static/images/cs4pano.jpg"
-    });
-    $("#c3pano").pano({
-        img: "static/images/cs4pano.jpg"
-    });
-    $("#c4pano").pano({
-        img: "static/images/cs4pano.jpg"
-    });
-    $("#c5pano").pano({
-        img: "static/images/cs4pano.jpg"
-    });
-
-
-    $("#r1pano").pano({
-        img: "static/images/cs4pano.jpg"
-    });
-    $("#r2pano").pano({
-        img: "static/images/cs4pano.jpg"
-    });
-    $("#r3pano").pano({
-        img: "static/images/cs7pano.jpg"
-    });
-    $("#r4pano").pano({
-        img: "static/images/cs7pano.jpg"
-    });
-
-    $("#r5pano").pano({
-        img: "static/images/cs7pano.jpg"
-    });
-});
 
 
 // HIDE MOBILE MENU AFTER CLIKING ON A LINK
