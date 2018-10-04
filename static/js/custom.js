@@ -20,16 +20,23 @@ jQuery(document).ready(function($){
 	    	});
 
 	    	$imgs.load(function(){
-	    		$container.isotope('reLayout');
+	    		$container.isotope('layout');
 	    	})
 
 	    });
 
 	    //filter items on button click
-
 	    $('.filter-wrapper li a').click(function(){
 
 	        var $this = $(this), filterValue = $this.attr('data-filter');
+
+	        var $filtered_imgs = $('.iso-box'+filterValue+' a:first-child img:first-child');
+			$filtered_imgs.each(function( index ) {
+				if ($(this).attr('data-src') != null && $(this).attr('src') == 'static/images/empty.jpg'){
+					$( this ).attr('src', $( this ).attr('data-src'));
+					//console.log( index + ": " + $( this ).text() + $( this ).attr('data-src'));
+				}
+			});       
 
 			$container.isotope({ 
 				filter: filterValue,
@@ -38,10 +45,9 @@ jQuery(document).ready(function($){
 				    easing: 'linear', 
 				    queue: false, 
 				}              	 
-			});	            
+			});	     
 
 			// don't proceed if already selected 
-
 			if ( $this.hasClass('selected') ) { 
 				return false; 
 			}
@@ -74,7 +80,7 @@ jQuery(document).ready(function($){
             });
 
             $imgs.load(function(){
-                $container.isotope('reLayout');
+                $container.isotope('layout');
             })
 
         });
@@ -84,6 +90,14 @@ jQuery(document).ready(function($){
         $('.filter2-wrapper li a').click(function(){
 
             var $this = $(this), filterValue = $this.attr('data-filter');
+
+            var $filtered_imgs = $('.iso2-box'+filterValue+' a:first-child img:first-child');
+			$filtered_imgs.each(function( index ) {
+				if ($(this).attr('data-src') != null && $(this).attr('src') == 'static/images/empty.jpg'){
+					$( this ).attr('src', $( this ).attr('data-src'));
+					//console.log( index + ": " + $( this ).text() + $( this ).attr('data-src'));
+				}
+			}); 
 
             $container.isotope({
                 filter: filterValue,
