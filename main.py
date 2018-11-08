@@ -11,7 +11,6 @@ app = Flask(__name__)
 def send_email():
 	myemail = 'rulotesbar@gmail.com'
 	client = request.form["email"]
-	#receivers = [myemail]
 
 	message2 = "To: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\n"+MIMEText(
@@ -23,16 +22,16 @@ def send_email():
 		">\nTo: RulotesBar <"+myemail+\
 	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\n"+\
 	    MIMEText(request.form["message"], _charset="UTF-8").as_string()
-	print(message)
+	app.logger.info(message)
 
 	try:
 	   smtpObj = smtplib.SMTP('localhost')
 	   smtpObj.sendmail("rulotesbar@gmail.com", myemail, message)
 	   smtpObj.sendmail("rulotesbar@gmail.com", client, message2)
-	   print("Successfully sent email")
+	   app.logger.warn("Successfully sent email from",client)
 	   return render_template('email.html')
-	except:
-	   print("Error: unable to send email")
+	except Exception as e:
+	   app.logger.error("Error: unable to send email", e)
 
 	return render_template('email_error.html')
 
@@ -41,7 +40,6 @@ def send_email():
 def send_email_en():
 	myemail = 'rulotesbar@gmail.com'
 	client = request.form["email"]
-	#receivers = [myemail]
 
 	message2 = "To: "+Header(request.form["name"], "utf-8").encode()+" <"+request.form["email"]+\
 	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\nThis is an automated message.\n\n"+\
@@ -52,16 +50,16 @@ def send_email_en():
 		">\nTo: RulotesBar <"+myemail+\
 	    ">\nSubject: "+Header(request.form["subject"], "utf-8").encode()+"\n"+\
 	    MIMEText(request.form["message"], _charset="UTF-8").as_string()
-	print(message)
+	app.logger.info(message)
 
 	try:
 	   smtpObj = smtplib.SMTP('localhost')
 	   smtpObj.sendmail("rulotesbar@gmail.com", myemail, message)
 	   smtpObj.sendmail("rulotesbar@gmail.com", client, message2)
-	   print("Successfully sent email")
+	   app.logger.warn("Successfully sent email from",client)
 	   return render_template('email_en.html')
-	except:
-	   print("Error: unable to send email")
+	except Exception as e:
+	   app.logger.error("Error: unable to send email", e)
 
 	return render_template('email_error_en.html')
 
@@ -77,6 +75,5 @@ def index_en():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1',port=5000)    # uncomment this for local debugging
-    #app.run(host='192.168.1.64',port=5000)
+    app.run(host='127.0.0.1',port=5000)
 
