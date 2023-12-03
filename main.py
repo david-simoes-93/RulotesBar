@@ -9,6 +9,9 @@ app = Flask(__name__)
 
 @app.route('/email', methods=['POST'])
 def send_email():
+	if request.form["captcha"].strip() != "7":
+		return render_template('email_error.html')
+
 	myemail = 'rulotesbar@gmail.com'
 	client = request.form["email"]
 
@@ -38,6 +41,9 @@ def send_email():
 
 @app.route('/email_en', methods=['POST'])
 def send_email_en():
+	if request.form["captcha"].strip() != "8":
+		return render_template('email_error.html')
+
 	myemail = 'rulotesbar@gmail.com'
 	client = request.form["email"]
 
